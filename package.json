@@ -1,0 +1,26 @@
+{
+	"name": "space-admin-docs",
+	"version": "1.1.0",
+	"description": "Space-Admin 开源管理系统文档",
+	"author": {
+		"name": "JinCheng",
+		"email": "5758912@qq.com",
+		"url": "https://github.com/ChengJin-web"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/Space-Admin-Docs",
+	"scripts": {
+		"docs:dev": "vitepress dev docs --host",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.11",
+		"markdown-it-custom-attrs": "^1.0.2",
+		"sass": "^1.62.1",
+		"typescript": "^5.0.4",
+		"vite": "^4.3.9",
+		"vitepress": "1.0.0-beta.1",
+		"vue": "^3.3.4"
+	}
+}
