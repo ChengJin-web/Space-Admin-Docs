@@ -41,7 +41,7 @@ export default {
 					{ text: "更新日志", link: "https://github.com/ChengJin-web/Space-Admin/blob/master/CHANGELOG.md" },
 				],
 			},
-			{ text: "🍵 赞助", link: "/sponsor/index" },
+			{ text: "☕ 赞助", link: "/sponsor/index" },
 		],
 		sidebar: {
 			"/guide/": [
