@@ -38,7 +38,7 @@ export default {
 				items: [
 					{ text: "预览地址", link: "https://admin.spicyboy.cn/" },
 					{ text: "GitHub 源码", link: "https://github.com/ChengJin-web/Space-Admin" },
-					{ text: "更新日志", link: "https://github.com/ChengJin-web/Space-Admin/blob/master/CHANGELOG.md" },
+					{ text: "更新日志", link: "updateLog/index" },
 				],
 			},
 			{ text: "☕ 赞助", link: "/sponsor/index" },
