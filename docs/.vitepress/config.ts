@@ -3,7 +3,7 @@ import mdItCustomAttrs from "markdown-it-custom-attrs";
 export default {
 	title: "Space-Admin",
 	lang: "zh-CN",
-	base: '/space-admin/',
+	base: '/Space-Admin-Docs-master/',
 	description: "Space Admin 中文文档",
 	head: [
 		["meta", { name: "author", content: "JinCheng" }],
