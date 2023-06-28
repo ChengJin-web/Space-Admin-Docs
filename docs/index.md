@@ -19,7 +19,7 @@ hero:
       text: 在 Github 上查看
       link: https://www.baidu.com
   image:
-    src: /logo.svg
+    src: /logo.png
 features:
   - icon: 🔥
     title: 最新流行技术栈

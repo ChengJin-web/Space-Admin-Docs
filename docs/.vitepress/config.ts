@@ -8,14 +8,14 @@ export default {
 	head: [
 		["meta", { name: "author", content: "JinCheng" }],
 		["meta", { name: "keywords", content: "Space, Space-Admin, Vite, Vue, Vue3, Admin" }],
-		["link", { rel: "icon", href: "/logo.svg" }],
+		["link", { rel: "icon", href: "/logo.png" }],
 		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" }],
 		["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }],
 	],
 	markdown: { config: (md) => md.use(mdItCustomAttrs, "image", { "data-fancybox": "gallery" }) },
 	lastUpdated: true,
 	themeConfig: {
-		logo: "/logo.svg",
+		logo: "/logo.png",
 		// algolia: {
 		// 	appId: "YMXN47DKMJ",
 		// 	apiKey: "8bf7d8e2b7e7b32a95f5aec9aca38a70",
