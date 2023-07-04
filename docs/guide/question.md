@@ -8,15 +8,5 @@
 
 ## 项目后端
 
-- 项目没有后端代码，都是使用的在线 Mock 平台
-- Mock 数据在 [src/assets/mock] 文件夹下
-
-::: info 在线 Mock 平台
-
-- FastMock：[https://www.fastmock.site](https://www.fastmock.site)
-- EasyMock：[https://mock.mengxuegu.com](https://mock.mengxuegu.com)
-  :::
-
-<br/>
-
-🙆‍♂️ 请大家帮忙提交 [pull request](https://github.com/ChengJin-web/Space-Admin/pulls)
+- 项目没有后端代码，都是使用json Mock 的数据
+- Mock 数据在 [src/assets/json] 文件夹下
