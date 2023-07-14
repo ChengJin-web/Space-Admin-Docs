@@ -27,7 +27,7 @@ features:
   - icon: 🚀
     title: 规范工程化工作流
     details: 配置 Eslint、Prettier、Husky、Commitlint、Lint-staged 规范前端工程代码规范
-  - icon: ⚒
+  - icon: 🛠️
     title: 丰富的组件和Hooks
     details: 提供丰富的组件、常用 Hooks 封装，在一定程度上节省你造轮子的时间
   - icon: 🎨
