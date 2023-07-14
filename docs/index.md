@@ -15,9 +15,6 @@ hero:
     - theme: alt
       text: 在线预览
       link: https://www.baidu.com
-    - theme: alt
-      text: 在 Github 上查看
-      link: https://www.baidu.com
   image:
     src: /logo.png
 features:

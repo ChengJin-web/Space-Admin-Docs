@@ -8,7 +8,7 @@ export default {
 	head: [
 		["meta", { name: "author", content: "JinCheng" }],
 		["meta", { name: "keywords", content: "Space, Space-Admin, Vite, Vue, Vue3, Admin" }],
-		["link", { rel: "icon", href: "/logo.png" }],
+		["link", { rel: "icon", href: "/Space-Admin-Docs/logo.png" }],
 		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" }],
 		["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }],
 	],
