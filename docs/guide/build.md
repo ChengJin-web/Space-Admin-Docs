@@ -133,7 +133,7 @@ server {
 
 ```bash
 # 在.env.production内，配置接口地址
-VITE_GLOB_API_URL=/api
+VITE_GLOB_API_URL = /api
 ```
 
 在 nginx 配置请求转发到后台
