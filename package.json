@@ -15,12 +15,12 @@
 		"docs:preview": "vitepress preview docs"
 	},
 	"devDependencies": {
-		"@types/node": "^18.15.11",
+		"@types/node": "^20.4.2",
 		"markdown-it-custom-attrs": "^1.0.2",
-		"sass": "^1.62.1",
-		"typescript": "^5.0.4",
-		"vite": "^4.3.9",
-		"vitepress": "1.0.0-beta.1",
+		"sass": "^1.63.6",
+		"typescript": "^5.1.6",
+		"vite": "^4.4.4",
+		"vitepress": "1.0.0-beta.5",
 		"vue": "^3.3.4"
 	}
 }
