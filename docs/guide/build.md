@@ -29,14 +29,9 @@ pnpm preview
 
 ## 部署
 
-例如上传到 nginx
-
-```
-/srv/www/project/index.html
-```
+例如上传到 nginx 此目录 `/srv/www/project/index.html`
 
 ```bash
-
 # nginx 配置
 location / {
 	# 不缓存 html，防止程序更新后缓存继续生效
@@ -50,21 +45,21 @@ location / {
 }
 ```
 
-部署时可能会发现资源路径不对，只需要修改.env.production 文件即可。
+部署时可能会发现资源路径不对，只需要修改`.env.production` 文件即可。
 
 ```bash
 # 根据自己路径来配置更改
 # 注意需要以 / 开头和结尾
-VITE_PUBLIC_PATH=/
-VITE_PUBLIC_PATH=/xxx/
+VITE_PUBLIC_PATH = /
+VITE_PUBLIC_PATH = /xxx/
 
 ```
 
 ### 前端路由与服务端的结合
 
-项目前端路由使用的是 vue-router，所以你可以选择两种方式：history 和 hash。
+项目前端路由使用的是 vue-router，所以你可以选择两种方式：`history` 和 `hash`。
 
-- hash 默认会在 url 后面拼接#
+- hash 默认会在 url 后面拼接`#`
 - history 则不会，不过 history 需要服务器配合
 
 路由模式可在 src/routers/index.ts 内进行 mode 修改
