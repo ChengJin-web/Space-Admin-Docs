@@ -1,9 +1,9 @@
 # 目录结构
 
-## Space-Admin 目录说明 📚
+## Spacebar 目录说明 📚
 
 ```txt
-Space-Admin
+Spacebar
 ├─ .husky                 # husky 配置文件
 ├─ .vscode                # VSCode 推荐配置
 ├─ build                  # Vite 配置项

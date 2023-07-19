@@ -49,7 +49,7 @@ Node.js 版本推荐安装 **16+** 以上，版本过低依赖包可能安装失
 
 ```bash
 # 克隆代码
-git clone https://github.com/ChengJin-web/Space-Admin.git
+git clone https://github.com/ChengJin-web/Spacebar.git
 ```
 
 ## 安装使用步骤

@@ -1,14 +1,14 @@
 import mdItCustomAttrs from "markdown-it-custom-attrs";
 
 export default {
-	title: "Space-Admin",
+	title: "Spacebar",
 	lang: "zh-CN",
-	base: '/Space-Admin-Docs/',
-	description: "Space Admin 中文文档",
+	base: '/',
+	description: "Spacebar 中文文档",
 	head: [
 		["meta", { name: "author", content: "JinCheng" }],
-		["meta", { name: "keywords", content: "Space, Space-Admin, Vite, Vue, Vue3, Admin" }],
-		["link", { rel: "icon", href: "/Space-Admin-Docs/logo.png" }],
+		["meta", { name: "keywords", content: "Space, Spacebar, Vite, Vue, Vue3, Admin,vue element-plus admin" }],
+		["link", { rel: "icon", href: "/logo.png" }],
 		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" }],
 		["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }],
 	],
@@ -19,26 +19,26 @@ export default {
 		// algolia: {
 		// 	appId: "YMXN47DKMJ",
 		// 	apiKey: "8bf7d8e2b7e7b32a95f5aec9aca38a70",
-		// 	indexName: "Space-Admin",
+		// 	indexName: "Spacebar",
 		// },
 		editLink: {
 			text: "为此页提供修改建议",
 			pattern: "",
 		},
 		socialLinks: [
-			{ icon: "github", link: "https://github.com/ChengJin-web/Space-Admin" }
+			{ icon: "github", link: "https://github.com/ChengJin-web/Spacebar" }
 		],
 		footer: {
 			message: "MIT License.",
-			copyright: "Copyright © 2023 Space-Admin",
+			copyright: "Copyright © 2023 Spacebar",
 		},
 		nav: [
 			{ text: "指南", link: "/guide/", activeMatch: "/guide" },
 			{
 				text: "相关链接",
 				items: [
-					{ text: "预览地址", link: "https://github.com/ChengJin-web/Space-Admin" },
-					{ text: "GitHub 源码", link: "https://github.com/ChengJin-web/Space-Admin" },
+					{ text: "预览地址", link: "https://github.com/ChengJin-web/Spacebar" },
+					{ text: "GitHub 源码", link: "https://github.com/ChengJin-web/Spacebar" },
 					{ text: "更新日志", link: "updateLog/index" },
 				],
 			},

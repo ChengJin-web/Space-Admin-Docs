@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: Space-Admin
+title: Spacebar
 titleTemplate: 一款简单易用的中后台模版
 
 hero:
-  name: Space-Admin
+  name: Spacebar
   text: 简单易用的中后台模版
   tagline: 基于 Vue3.3 + Vite4 + TS + Pinia + Element-Plus
   actions:

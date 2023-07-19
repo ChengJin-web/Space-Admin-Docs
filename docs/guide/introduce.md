@@ -2,7 +2,7 @@
 
 ## 简介
 
-[Space Admin](https://github.com/ChengJin-web/Space-Admin) 一款基于 Vue3.3、TypeScript、Vite4、Pinia、Element-Plus 开源的后台管理框架，使用目前最新技术栈开发。本项目封装了一些常用组件、hooks、指令、动态路由、按钮级别权限控制等功能。
+[Spacebar](https://github.com/ChengJin-web/Spacebar) 一款基于 Vue3.3、TypeScript、Vite4、Pinia、Element-Plus 开源的后台管理框架，使用目前最新技术栈开发。本项目封装了一些常用组件、hooks、指令、动态路由、按钮级别权限控制等功能。
 
 ## 需要掌握的基础知识
 
