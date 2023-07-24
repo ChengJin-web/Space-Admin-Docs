@@ -14,7 +14,7 @@ hero:
       link: /guide/index
     - theme: alt
       text: 在线预览
-      link: https://www.baidu.com
+      link: https://bestjin.gitee.io/spacebar-admin-view
   image:
     src: /logo.png
 features:
