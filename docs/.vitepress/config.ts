@@ -1,13 +1,13 @@
 import mdItCustomAttrs from "markdown-it-custom-attrs";
 
 export default {
-	title: "Spacebar",
+	title: "Spacebar Admin",
 	lang: "zh-CN",
 	base: '/',
-	description: "Spacebar 中文文档",
+	description: "Spacebar Admin中文文档",
 	head: [
 		["meta", { name: "author", content: "JinCheng" }],
-		["meta", { name: "keywords", content: "Space, Spacebar, Vite, Vue, Vue3, Admin,vue element-plus admin" }],
+		["meta", { name: "keywords", content: "Spacebar, Spacebar Admin, Vite, Vue, Vue3, Admin,vue element-plus admin" }],
 		["link", { rel: "icon", href: "/logo.png" }],
 		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" }],
 		["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }],
@@ -26,7 +26,7 @@ export default {
 			pattern: "",
 		},
 		socialLinks: [
-			{ icon: "github", link: "https://github.com/ChengJin-web/Spacebar" }
+			{ icon: "github", link: "https://github.com/ChengJin-web/spacebar-admin" }
 		],
 		footer: {
 			message: "MIT License.",
@@ -38,7 +38,7 @@ export default {
 				text: "相关链接",
 				items: [
 					{ text: "预览地址", link: "https://github.com/ChengJin-web/Spacebar" },
-					{ text: "GitHub 源码", link: "https://github.com/ChengJin-web/Spacebar" },
+					{ text: "GitHub 源码", link: "https://bestjin.gitee.io/spacebar-admin-view" },
 					{ text: "更新日志", link: "updateLog/index" },
 				],
 			},
