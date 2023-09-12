@@ -3,12 +3,12 @@ import mdItCustomAttrs from "markdown-it-custom-attrs";
 export default {
 	title: "Spacebar",
 	lang: "zh-CN",
-	base: '/spacebar-admin-docs',
+	base: '/',
 	description: "Spacebar中文文档",
 	head: [
 		["meta", { name: "author", content: "JinCheng" }],
 		["meta", { name: "keywords", content: "Spacebar, Spacebar Admin, Vite, Vue, Vue3, Admin,vue element-plus admin" }],
-		["link", { rel: "icon", href: "/spacebar-admin-docs/logo.png" }],
+		["link", { rel: "icon", href: "/logo.png" }],
 		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" }],
 		["script", { src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" }],
 	],
