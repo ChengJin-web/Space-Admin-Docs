@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: Spacebar Admin
+title: Spacebar
 titleTemplate: 一款简单易用的中后台模版
 
 hero:
-  name: Spacebar Admin
+  name: Spacebar
   text: 简单易用的中后台模版
   tagline: 基于 Vue3.3 + Vite4 + TS + Pinia + Element-Plus
   actions:
@@ -14,7 +14,7 @@ hero:
       link: /guide/index
     - theme: alt
       text: 在线预览
-      link: https://bestjin.gitee.io/spacebar-admin-view
+      link: https://admin.spacebar.top
   image:
     src: /logo.png
 features:

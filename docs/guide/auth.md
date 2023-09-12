@@ -6,4 +6,4 @@
 
 ## 按钮权限
 
-- https://admin.spicyboy.cn/#/auth/button
+- <https://admin.spacebar.top/#/auth/button>

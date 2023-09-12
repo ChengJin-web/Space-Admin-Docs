@@ -1,10 +1,10 @@
 import mdItCustomAttrs from "markdown-it-custom-attrs";
 
 export default {
-	title: "Spacebar Admin",
+	title: "Spacebar",
 	lang: "zh-CN",
 	base: '/',
-	description: "Spacebar Admin中文文档",
+	description: "Spacebar中文文档",
 	head: [
 		["meta", { name: "author", content: "JinCheng" }],
 		["meta", { name: "keywords", content: "Spacebar, Spacebar Admin, Vite, Vue, Vue3, Admin,vue element-plus admin" }],
@@ -26,7 +26,7 @@ export default {
 			pattern: "",
 		},
 		socialLinks: [
-			{ icon: "github", link: "https://github.com/ChengJin-web/spacebar-admin" }
+			{ icon: "github", link: "https://github.com/chengkoi/spacebar" }
 		],
 		footer: {
 			message: "MIT License.",
@@ -37,8 +37,7 @@ export default {
 			{
 				text: "相关链接",
 				items: [
-					{ text: "预览地址", link: "https://github.com/ChengJin-web/Spacebar" },
-					{ text: "GitHub 源码", link: "https://bestjin.gitee.io/spacebar-admin-view" },
+					{ text: "GitHub 源码", link: "https://github.com/chengkoi/spacebar" },
 					{ text: "更新日志", link: "updateLog/index" },
 				],
 			},

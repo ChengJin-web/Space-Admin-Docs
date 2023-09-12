@@ -49,19 +49,19 @@ Node.js 版本推荐安装 **16+** 以上，版本过低依赖包可能安装失
 
 ```bash
 # 克隆代码
-git clone https://github.com/ChengJin-web/Spacebar.git
+git clone https://github.com/chengkoi/spacebar.git
 ```
 
 ## 安装使用步骤
 
-### 安装依赖：
+### 安装依赖
 
 ```bash
 # 使用 pnpm
 pnpm install
 ```
 
-### 运行项目：
+### 运行项目
 
 ```bash
 # 以下两个命令都可以
@@ -69,7 +69,7 @@ pnpm dev
 pnpm serve
 ```
 
-### 打包项目：
+### 打包项目
 
 ```bash
 # 开发环境
@@ -82,7 +82,7 @@ pnpm build:test
 pnpm build:pro
 ```
 
-### 校验、格式化代码：
+### 校验、格式化代码
 
 ```bash
 # eslint 检测代码
@@ -95,7 +95,7 @@ pnpm lint:prettier
 pnpm lint:stylelint
 ```
 
-### 提交代码：
+### 提交代码
 
 ```bash
 # 提交代码（提交前会自动执行 lint:lint-staged 命令）

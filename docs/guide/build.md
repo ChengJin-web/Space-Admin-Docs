@@ -51,7 +51,7 @@ location / {
 # 根据自己路径来配置更改
 # 注意需要以 / 开头和结尾
 VITE_PUBLIC_PATH = /
-VITE_PUBLIC_PATH = /xxx/
+VITE_PUBLIC_PATH = /xxx
 
 ```
 
@@ -109,7 +109,7 @@ server {
 
 ```bash
 # 在.env.production内，配置子目录路径
-VITE_PUBLIC_PATH = /sub/
+VITE_PUBLIC_PATH = /sub
 ```
 
 ```bash

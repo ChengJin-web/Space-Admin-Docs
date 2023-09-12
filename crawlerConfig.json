@@ -1,6 +1,6 @@
 {
 	"index_name": "Space-Admin",
-	"start_urls": ["https://docs.spicyboy.cn/"],
+	"start_urls": ["https://docs.spacebar.top/"],
 	"rateLimit": 8,
 	"maxDepth": 10,
 	"selectors": {
