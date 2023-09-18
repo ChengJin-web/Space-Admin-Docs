@@ -10,9 +10,25 @@
 
 项目开发完成后，执行以下命令进行构建
 
-```bash
+::: code-group
+
+```bash [pnpm]
 pnpm build
 ```
+
+```bash [yarn]
+yarn build
+```
+
+```bash [npm]
+npm run build
+```
+
+:::
+
+<!-- ```bash
+pnpm build
+``` -->
 
 ## 预览
 

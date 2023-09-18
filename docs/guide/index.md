@@ -56,18 +56,45 @@ git clone https://github.com/chengkoi/spacebar.git
 
 ### 安装依赖
 
-```bash
-# 使用 pnpm
+::: code-group
+
+```bash [pnpm]
 pnpm install
 ```
 
+```bash [yarn]
+yarn install
+```
+
+```bash [npm]
+npm run install
+```
+
+:::
+
 ### 运行项目
 
-```bash
+::: code-group
+
+```bash [pnpm]
 # 以下两个命令都可以
 pnpm dev
 pnpm serve
 ```
+
+```bash [yarn]
+# 以下两个命令都可以
+yarn dev
+yarn serve
+```
+
+```bash [npm]
+# 以下两个命令都可以
+npm run dev
+npm run serve
+```
+
+:::
 
 ### 打包项目
 
