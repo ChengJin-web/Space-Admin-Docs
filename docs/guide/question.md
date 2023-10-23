@@ -8,5 +8,5 @@
 
 ## 项目后端
 
-- 项目没有后端代码，都是使用json Mock 的数据
+- 项目没有后端代码，都是使用 json Mock 的数据
 - Mock 数据在 [src/assets/json] 文件夹下

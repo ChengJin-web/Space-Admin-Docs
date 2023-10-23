@@ -26,35 +26,35 @@
 ```typescript
 /** 路由参数简介 */
 interface RouteRecordRaw {
-	/** 路由访问路径 */
-	path: string;
-	/** 路由 name (对应页面组件 name, 可用作 KeepAlive 缓存标识 && 按钮权限筛选) */
-	name: string;
-	/** 路由重定向地址 */
-	redirect: string;
-	/** 视图文件路径 */
-	component: string | (() => Promise<unknown>);
-	/** 路由元信息 */
-	meta: {
-		/** 菜单和面包屑对应的图标 */
-		icon: string;
-		/** 路由标题 (用作 document.title || 菜单的名称) */
-		title: string;
-		/** 是否在菜单中隐藏, 需要高亮的 path (通常用作详情页高亮父级菜单) */
-		activeMenu: string;
-		/** 路由外链时填写的访问地址 */
-		isLink: string;
-		/** 是否在菜单中隐藏 (通常列表详情页需要隐藏) */
-		isHide: boolean;
-		/** 菜单是否全屏 (示例：数据大屏页面) */
-		isFull: boolean;
-		/** 菜单是否固定在标签页中 (首页通常是固定项) */
-		isAffix: boolean;
-		/** 当前路由是否缓存 */
-		isKeepAlive: boolean;
-	};
-	/** 多级路由嵌套 */
-	children: RouteRecordRaw[];
+  /** 路由访问路径 */
+  path: string;
+  /** 路由 name (对应页面组件 name, 可用作 KeepAlive 缓存标识 && 按钮权限筛选) */
+  name: string;
+  /** 路由重定向地址 */
+  redirect: string;
+  /** 视图文件路径 */
+  component: string | (() => Promise<unknown>);
+  /** 路由元信息 */
+  meta: {
+    /** 菜单和面包屑对应的图标 */
+    icon: string;
+    /** 路由标题 (用作 document.title || 菜单的名称) */
+    title: string;
+    /** 是否在菜单中隐藏, 需要高亮的 path (通常用作详情页高亮父级菜单) */
+    activeMenu: string;
+    /** 路由外链时填写的访问地址 */
+    isLink: string;
+    /** 是否在菜单中隐藏 (通常列表详情页需要隐藏) */
+    isHide: boolean;
+    /** 菜单是否全屏 (示例：数据大屏页面) */
+    isFull: boolean;
+    /** 菜单是否固定在标签页中 (首页通常是固定项) */
+    isAffix: boolean;
+    /** 当前路由是否缓存 */
+    isKeepAlive: boolean;
+  };
+  /** 多级路由嵌套 */
+  children: RouteRecordRaw[];
 }
 ```
 
@@ -68,9 +68,9 @@ import authMenuList from "@/assets/json/authMenuList.json";
 
 // 获取菜单列表
 export const getAuthMenuListApi = () => {
-	// return http.get<Menu.MenuOptions[]>(PORT1 + `/menu/list`, {}, { noLoading: true });
-	// 如果想让菜单变为本地数据，注释上一行代码，并引入本地 authMenuList.json 数据
-	return authMenuList;
+  // return http.get<Menu.MenuOptions[]>(PORT1 + `/menu/list`, {}, { noLoading: true });
+  // 如果想让菜单变为本地数据，注释上一行代码，并引入本地 authMenuList.json 数据
+  return authMenuList;
 };
 ```
 
@@ -80,18 +80,18 @@ export const getAuthMenuListApi = () => {
 
 ```typescript
 const home = {
-	path: "/home/index",
-	name: "home",
-	component: "/home/index",
-	meta: {
-		icon: "HomeFilled",
-		title: "首页",
-		isLink: "",
-		isHide: false,
-		isFull: false,
-		isAffix: true,
-		isKeepAlive: true,
-	},
+  path: "/home/index",
+  name: "home",
+  component: "/home/index",
+  meta: {
+    icon: "HomeFilled",
+    title: "首页",
+    isLink: "",
+    isHide: false,
+    isFull: false,
+    isAffix: true,
+    isKeepAlive: true,
+  },
 };
 ```
 
@@ -99,34 +99,34 @@ const home = {
 
 ```typescript
 const proTable = {
-	path: "/proTable",
-	name: "proTable",
-	redirect: "/proTable/useProTable",
-	meta: {
-		icon: "MessageBox",
-		title: "超级表格",
-		isLink: "",
-		isHide: false,
-		isFull: false,
-		isAffix: false,
-		isKeepAlive: true,
-	},
-	children: [
-		{
-			path: "/proTable/useProTable",
-			name: "useProTable",
-			component: "/proTable/useProTable/index",
-			meta: {
-				icon: "Menu",
-				title: "使用 ProTable",
-				isLink: "",
-				isHide: false,
-				isFull: false,
-				isAffix: false,
-				isKeepAlive: true,
-			},
-		},
-	],
+  path: "/proTable",
+  name: "proTable",
+  redirect: "/proTable/useProTable",
+  meta: {
+    icon: "MessageBox",
+    title: "超级表格",
+    isLink: "",
+    isHide: false,
+    isFull: false,
+    isAffix: false,
+    isKeepAlive: true,
+  },
+  children: [
+    {
+      path: "/proTable/useProTable",
+      name: "useProTable",
+      component: "/proTable/useProTable/index",
+      meta: {
+        icon: "Menu",
+        title: "使用 ProTable",
+        isLink: "",
+        isHide: false,
+        isFull: false,
+        isAffix: false,
+        isKeepAlive: true,
+      },
+    },
+  ],
 };
 ```
 
@@ -134,51 +134,51 @@ const proTable = {
 
 ```typescript
 const proTable = {
-	path: "/proTable",
-	name: "proTable",
-	redirect: "/proTable/useProTable",
-	meta: {
-		icon: "MessageBox",
-		title: "超级表格",
-		isLink: "",
-		isHide: false,
-		isFull: false,
-		isAffix: false,
-		isKeepAlive: true,
-	},
-	children: [
-		{
-			path: "/proTable/useProTable",
-			name: "useProTable",
-			component: "/proTable/useProTable/index",
-			meta: {
-				icon: "Menu",
-				title: "使用 ProTable",
-				isLink: "",
-				isHide: false,
-				isFull: false,
-				isAffix: false,
-				isKeepAlive: true,
-			},
-			children: [
-				{
-					path: "/proTable/useProTable/detail/:id",
-					name: "useProTableDetail",
-					component: "/proTable/useProTable/detail",
-					meta: {
-						icon: "Menu",
-						title: "ProTable 详情",
-						activeMenu: "/proTable/useProTable",
-						isLink: "",
-						isHide: true,
-						isFull: false,
-						isAffix: false,
-						isKeepAlive: true,
-					},
-				},
-			],
-		},
-	],
+  path: "/proTable",
+  name: "proTable",
+  redirect: "/proTable/useProTable",
+  meta: {
+    icon: "MessageBox",
+    title: "超级表格",
+    isLink: "",
+    isHide: false,
+    isFull: false,
+    isAffix: false,
+    isKeepAlive: true,
+  },
+  children: [
+    {
+      path: "/proTable/useProTable",
+      name: "useProTable",
+      component: "/proTable/useProTable/index",
+      meta: {
+        icon: "Menu",
+        title: "使用 ProTable",
+        isLink: "",
+        isHide: false,
+        isFull: false,
+        isAffix: false,
+        isKeepAlive: true,
+      },
+      children: [
+        {
+          path: "/proTable/useProTable/detail/:id",
+          name: "useProTableDetail",
+          component: "/proTable/useProTable/detail",
+          meta: {
+            icon: "Menu",
+            title: "ProTable 详情",
+            activeMenu: "/proTable/useProTable",
+            isLink: "",
+            isHide: true,
+            isFull: false,
+            isAffix: false,
+            isKeepAlive: true,
+          },
+        },
+      ],
+    },
+  ],
 };
 ```
 
@@ -186,49 +186,49 @@ const proTable = {
 
 ```typescript
 const proTable = {
-	path: "/proTable",
-	name: "proTable",
-	redirect: "/proTable/useProTable",
-	meta: {
-		icon: "MessageBox",
-		title: "超级表格",
-		isLink: "",
-		isHide: false,
-		isFull: false,
-		isAffix: false,
-		isKeepAlive: true,
-	},
-	children: [
-		{
-			path: "/proTable/useTreeFilter",
-			name: "useTreeFilter",
-			component: "/proTable/useTreeFilter/index",
-			meta: {
-				icon: "Menu",
-				title: "使用 TreeFilter",
-				isLink: "",
-				isHide: false,
-				isFull: false,
-				isAffix: false,
-				isKeepAlive: true,
-			},
-		},
-		{
-			path: "/proTable/useTreeFilter/detail/:id",
-			name: "useTreeFilterDetail",
-			component: "/proTable/useTreeFilter/detail",
-			meta: {
-				icon: "Menu",
-				title: "TreeFilter 详情",
-				activeMenu: "/proTable/useTreeFilter",
-				isLink: "",
-				isHide: true,
-				isFull: false,
-				isAffix: false,
-				isKeepAlive: true,
-			},
-		},
-	],
+  path: "/proTable",
+  name: "proTable",
+  redirect: "/proTable/useProTable",
+  meta: {
+    icon: "MessageBox",
+    title: "超级表格",
+    isLink: "",
+    isHide: false,
+    isFull: false,
+    isAffix: false,
+    isKeepAlive: true,
+  },
+  children: [
+    {
+      path: "/proTable/useTreeFilter",
+      name: "useTreeFilter",
+      component: "/proTable/useTreeFilter/index",
+      meta: {
+        icon: "Menu",
+        title: "使用 TreeFilter",
+        isLink: "",
+        isHide: false,
+        isFull: false,
+        isAffix: false,
+        isKeepAlive: true,
+      },
+    },
+    {
+      path: "/proTable/useTreeFilter/detail/:id",
+      name: "useTreeFilterDetail",
+      component: "/proTable/useTreeFilter/detail",
+      meta: {
+        icon: "Menu",
+        title: "TreeFilter 详情",
+        activeMenu: "/proTable/useTreeFilter",
+        isLink: "",
+        isHide: true,
+        isFull: false,
+        isAffix: false,
+        isKeepAlive: true,
+      },
+    },
+  ],
 };
 ```
 
@@ -252,10 +252,10 @@ const proTable = {
  * @returns {Array}
  * */
 export function getShowMenuList(menuList: Menu.MenuOptions[]) {
-	let newMenuList: Menu.MenuOptions[] = JSON.parse(JSON.stringify(menuList));
-	return newMenuList.filter((item) => {
-		item.children?.length && (item.children = getShowMenuList(item.children));
-		return !item.meta?.isHide;
-	});
+  let newMenuList: Menu.MenuOptions[] = JSON.parse(JSON.stringify(menuList));
+  return newMenuList.filter((item) => {
+    item.children?.length && (item.children = getShowMenuList(item.children));
+    return !item.meta?.isHide;
+  });
 }
 ```

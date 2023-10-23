@@ -25,12 +25,12 @@
 
 ```ts
 const config: AxiosRequestConfig = {
-	// 默认地址请求地址，可在 .env.** 文件中修改
-	baseURL: import.meta.env.VITE_API_URL as string,
-	// 设置超时时间
-	timeout: ResultEnum.TIMEOUT as number,
-	// 跨域时候允许携带凭证
-	withCredentials: true,
+  // 默认地址请求地址，可在 .env.** 文件中修改
+  baseURL: import.meta.env.VITE_API_URL as string,
+  // 设置超时时间
+  timeout: ResultEnum.TIMEOUT as number,
+  // 跨域时候允许携带凭证
+  withCredentials: true,
 };
 ```
 
@@ -51,18 +51,18 @@ const config: AxiosRequestConfig = {
  * token校验(JWT) : 接受服务器返回的 token,存储到 vuex/pinia/本地储存当中
  */
 this.service.interceptors.request.use(
-	(config: CustomAxiosRequestConfig) => {
-		const userStore = useUserStore();
-		// 当前请求不需要显示 loading，在 api 服务中通过指定的第三个参数: { noLoading: true } 来控制
-		config.noLoading || showFullScreenLoading();
-		if (config.headers && typeof config.headers.set === "function") {
-			config.headers.set("x-access-token", userStore.token);
-		}
-		return config;
-	},
-	(error: AxiosError) => {
-		return Promise.reject(error);
-	}
+  (config: CustomAxiosRequestConfig) => {
+    const userStore = useUserStore();
+    // 当前请求不需要显示 loading，在 api 服务中通过指定的第三个参数: { noLoading: true } 来控制
+    config.noLoading || showFullScreenLoading();
+    if (config.headers && typeof config.headers.set === "function") {
+      config.headers.set("x-access-token", userStore.token);
+    }
+    return config;
+  },
+  (error: AxiosError) => {
+    return Promise.reject(error);
+  }
 );
 ```
 
@@ -78,37 +78,37 @@ this.service.interceptors.request.use(
  *  服务器换返回信息 -> [拦截统一处理] -> 客户端JS获取到信息
  */
 this.service.interceptors.response.use(
-	(response: AxiosResponse) => {
-		const { data } = response;
-		const userStore = useUserStore();
-		tryHideFullScreenLoading();
-		// 登陆失效
-		if (data.code == ResultEnum.OVERDUE) {
-			userStore.setToken("");
-			router.replace(LOGIN_URL);
-			ElMessage.error(data.msg);
-			return Promise.reject(data);
-		}
-		// 全局错误信息拦截（防止下载文件的时候返回数据流，没有 code 直接报错）
-		if (data.code && data.code !== ResultEnum.SUCCESS) {
-			ElMessage.error(data.msg);
-			return Promise.reject(data);
-		}
-		// 成功请求（在页面上除非特殊情况，否则不用处理失败逻辑）
-		return data;
-	},
-	async (error: AxiosError) => {
-		const { response } = error;
-		tryHideFullScreenLoading();
-		// 请求超时 && 网络错误单独判断，没有 response
-		if (error.message.indexOf("timeout") !== -1) ElMessage.error("请求超时！请您稍后重试");
-		if (error.message.indexOf("Network Error") !== -1) ElMessage.error("网络错误！请您稍后重试");
-		// 根据服务器响应的错误状态码，做不同的处理
-		if (response) checkStatus(response.status);
-		// 服务器结果都没有返回(可能服务器错误可能客户端断网)，断网处理:可以跳转到断网页面
-		if (!window.navigator.onLine) router.replace("/500");
-		return Promise.reject(error);
-	}
+  (response: AxiosResponse) => {
+    const { data } = response;
+    const userStore = useUserStore();
+    tryHideFullScreenLoading();
+    // 登陆失效
+    if (data.code == ResultEnum.OVERDUE) {
+      userStore.setToken("");
+      router.replace(LOGIN_URL);
+      ElMessage.error(data.msg);
+      return Promise.reject(data);
+    }
+    // 全局错误信息拦截（防止下载文件的时候返回数据流，没有 code 直接报错）
+    if (data.code && data.code !== ResultEnum.SUCCESS) {
+      ElMessage.error(data.msg);
+      return Promise.reject(data);
+    }
+    // 成功请求（在页面上除非特殊情况，否则不用处理失败逻辑）
+    return data;
+  },
+  async (error: AxiosError) => {
+    const { response } = error;
+    tryHideFullScreenLoading();
+    // 请求超时 && 网络错误单独判断，没有 response
+    if (error.message.indexOf("timeout") !== -1) ElMessage.error("请求超时！请您稍后重试");
+    if (error.message.indexOf("Network Error") !== -1) ElMessage.error("网络错误！请您稍后重试");
+    // 根据服务器响应的错误状态码，做不同的处理
+    if (response) checkStatus(response.status);
+    // 服务器结果都没有返回(可能服务器错误可能客户端断网)，断网处理:可以跳转到断网页面
+    if (!window.navigator.onLine) router.replace("/500");
+    return Promise.reject(error);
+  }
 );
 ```
 
@@ -138,20 +138,20 @@ import http from "@/api";
 // 登录函数
 // 松散的类型限制
 export const loginApi = (params: any) => {
-	return http.post("/login_url", params);
+  return http.post("/login_url", params);
 };
 
 interface LoginParams {
-	account: string;
-	password: string;
+  account: string;
+  password: string;
 }
 interface LoginResult {
-	token: string;
-	anything: any;
+  token: string;
+  anything: any;
 }
 // 严格的类型限制
 export const typeLoginApi = (params: LoginParams) => {
-	return http.post<LoginResult>("/login_url", params);
+  return http.post<LoginResult>("/login_url", params);
 };
 ```
 
@@ -162,16 +162,16 @@ import { loginApi } from "@/api/modules/login";
 
 // 模拟表单数据
 const form = {
-	account: "admin",
-	password: "123456",
+  account: "admin",
+  password: "123456",
 };
 const login = async () => {
-	// 如果请求成功，那么就会执行下面的代码。基本上不需要错误处理，错误情况都被拦截了
-	// 除非你有需要，你可以使用`.catch`
-	// const data = await loginApi(form).catch((err)=>{
-	// 错误处理
-	// })
-	const data = await loginApi(form);
-	// 保存token，跳转页面等操作
+  // 如果请求成功，那么就会执行下面的代码。基本上不需要错误处理，错误情况都被拦截了
+  // 除非你有需要，你可以使用`.catch`
+  // const data = await loginApi(form).catch((err)=>{
+  // 错误处理
+  // })
+  const data = await loginApi(form);
+  // 保存token，跳转页面等操作
 };
 ```

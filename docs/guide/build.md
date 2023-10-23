@@ -50,14 +50,14 @@ pnpm preview
 ```bash
 # nginx 配置
 location / {
-	# 不缓存 html，防止程序更新后缓存继续生效
-	if ($request_filename ~* .*\.(?:htm|html)$) {
-		add_header Cache-Control "private, no-store, no-cache, must-revalidate, proxy-revalidate";
-		access_log on;
-	}
-	# 这里是 vue 打包文件 dist 内的文件的存放路径
-	root /srv/www/project/;
-	index index.html index.htm;
+  # 不缓存 html，防止程序更新后缓存继续生效
+  if ($request_filename ~* .*\.(?:htm|html)$) {
+    add_header Cache-Control "private, no-store, no-cache, must-revalidate, proxy-revalidate";
+    access_log on;
+  }
+  # 这里是 vue 打包文件 dist 内的文件的存放路径
+  root /srv/www/project/;
+  index index.html index.htm;
 }
 ```
 
@@ -84,9 +84,9 @@ VITE_PUBLIC_PATH = /xxx
 import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
 
 const router = createRouter({
-	history: createWebHashHistory(),
-	// or
-	history: createWebHistory(),
+  history: createWebHashHistory(),
+  // or
+  history: createWebHistory(),
 });
 ```
 
@@ -98,10 +98,10 @@ const router = createRouter({
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
-	history: createWebHistory(),
-	routes: [
-		//...
-	],
+  history: createWebHistory(),
+  routes: [
+    //...
+  ],
 });
 ```
 
